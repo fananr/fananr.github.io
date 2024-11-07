@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="原文链接：https:&#x2F;&#x2F;blog.csdn.net&#x2F;Python_cocola&#x2F;article&#x2F;details&#x2F;137604139  2024年2月，OpenAI发布其首款视频生成模型Sora 据不完全统计，2023年全球AIGC产业融资超1900亿元 2023年6月，Runway获得谷歌、英伟达、Salesforce等投资者的新一轮1.41亿美元融资 Pika则用仅半年时间，连续完成三轮融资，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文章笔记【2024年AIGC行业研究：多模态大模型与商业应用 - CSDN App】">
+<meta property="og:url" content="http://example.com/2024/11/07/%E6%96%87%E7%AB%A0%E7%AC%94%E8%AE%B0%E3%80%902024%E5%B9%B4AIGC%E8%A1%8C%E4%B8%9A%E7%A0%94%E7%A9%B6%EF%BC%9A%E5%A4%9A%E6%A8%A1%E6%80%81%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%95%86%E4%B8%9A%E5%BA%94%E7%94%A8%20-%20CSDN%20App%E3%80%91/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="原文链接：https:&#x2F;&#x2F;blog.csdn.net&#x2F;Python_cocola&#x2F;article&#x2F;details&#x2F;137604139  2024年2月，OpenAI发布其首款视频生成模型Sora 据不完全统计，2023年全球AIGC产业融资超1900亿元 2023年6月，Runway获得谷歌、英伟达、Salesforce等投资者的新一轮1.41亿美元融资 Pika则用仅半年时间，连续完成三轮融资，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-07T12:53:35.000Z">
+<meta property="article:modified_time" content="2024-11-07T12:53:59.784Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>文章笔记【2024年AIGC行业研究：多模态大模型与商业应用 - CSDN App】 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="文章笔记【2024年AIGC行业研究：多模态大模型与商业应用 - CSDN App】"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-11-07 20:53" pubdate>
+          2024年11月7日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          17 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">文章笔记【2024年AIGC行业研究：多模态大模型与商业应用 - CSDN App】</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Python_cocola/article/details/137604139">https://blog.csdn.net/Python_cocola/article/details/137604139</a></p>
+<ul>
+<li>2024年2月，OpenAI发布其首款视频生成模型Sora</li>
+<li>据不完全统计，2023年全球AIGC产业融资超1900亿元</li>
+<li>2023年6月，Runway获得谷歌、英伟达、Salesforce等投资者的新一轮1.41亿美元融资</li>
+<li>Pika则用仅半年时间，连续完成三轮融资，总额达5500万美元</li>
+</ul>
+<h2 id="AIGC产业生态"><a href="#AIGC产业生态" class="headerlink" title="AIGC产业生态"></a>AIGC产业生态</h2><p>AIGC产业生态可分为三部分：</p>
+<ul>
+<li>上游基础设施层：包括数据、算力、模型开发训练平台&#x2F;计算平台等算法基础平台</li>
+<li>中游模型层：包括通用大模型、中间层模型、开源社区</li>
+<li>下游应用层：在文本、音频、图像、视频四类模态的基础上，发展出了策略生成和跨模态生成，并在金融、数据分析、设计等多个行业实现了商业应用<br><strong>产业生态图谱</strong>：以数据板块为代表的基础性有待突破，模型层占核心地位，应用层遍地开花。</li>
+</ul>
+<h3 id="一、上游基础设施层"><a href="#一、上游基础设施层" class="headerlink" title="一、上游基础设施层"></a>一、上游基础设施层</h3><p>数据服务板块成产业新增量，算力和算法产业生态格局较为确定</p>
+<h4 id="1、数据"><a href="#1、数据" class="headerlink" title="1、数据"></a>1、数据</h4><ul>
+<li>目前全球规模最大的开源跨模态数据集是LAION-5B</li>
+<li>全球首个亿级中文多模态数据集“悟空”则是由华为诺亚方舟实验室开源</li>
+<li>tokens的大小限制，例如GPT，一旦对话记忆超过4096 tokens，它就难以将之前的对话内容纳入到逻辑思考范围，导致GPT在面对较复杂任务时容易出现AI幻觉</li>
+<li>解除tokens大小限制的热门解决方案：向量数据库，核心是将数据转换成向量存储在数据库中</li>
+<li>Weaviate MongoDB等海外向量数据库成为资本关注对象，腾讯、京东等大厂也着手布局数据库</li>
+</ul>
+<h4 id="2、算力算法"><a href="#2、算力算法" class="headerlink" title="2、算力算法"></a>2、算力算法</h4><ul>
+<li>智算中心（为应用层提供所需算力服务、数据服务、算法服务）已成为新型公共算力基础设施之一</li>
+<li>AIDC OS，是九章云极DataCanvas自主研发的智算专属AI操作系统，成功实现算力资产附加价值的有效提升。</li>
+</ul>
+<h3 id="二、模型层"><a href="#二、模型层" class="headerlink" title="二、模型层"></a>二、模型层</h3><p>国内市场玩家多集中在底层通用大模型，中间层玩家较少</p>
+<h4 id="1、底层通用大模型"><a href="#1、底层通用大模型" class="headerlink" title="1、底层通用大模型"></a>1、底层通用大模型</h4><p>AIGC底层通用大模型分为2种：</p>
+<ul>
+<li>开源：采用公开模型的源码和数据集，任何人都可查看或修改源代码，如Stability AI开源的Stable Diffusion，Meta开源的Llamax，xAI开源的Grok-1，中国智源开源的Aquila。对于使用者来说，基于私有化部署拥有较高的数据隐私安全保障，迭代更新速度较快</li>
+<li>闭源：通过付费API或有限的试用接口访问，比如OpenAI的GPT模型、谷歌的PaLM-E模型等，国内模型比如李未可科技研发的WAKE-AI大模型、腾讯的混元AI、百度的文心大模型。对于使用者来说，前期投入成本低，运行稳定</li>
+</ul>
+<h4 id="2、中间层模型"><a href="#2、中间层模型" class="headerlink" title="2、中间层模型"></a>2、中间层模型</h4><p>中间层模型市场玩家大致可分为2类：</p>
+<ul>
+<li>垂类大模型</li>
+<li>中间集成商：组合多个模型接口，形成新的整体模型<br>以AI游戏引擎公司RPGGO为例，能为游戏工作室提供API联动，提升开发效率；自研的游戏引擎Zagii Engine能够协助个人创作者简化开发流程。</li>
+</ul>
+<h3 id="三、应用层"><a href="#三、应用层" class="headerlink" title="三、应用层"></a>三、应用层</h3><p>文字生成发展时间较长，跨模态生成潜力最高<br>按模态划分，可分为：</p>
+<ul>
+<li>文字生成：由于NLP技术发展历史较久，文字生成发展时间最长、落地应用最成熟</li>
+<li>音频生成</li>
+<li>图像生成</li>
+<li>视频生成</li>
+<li>跨模态生成</li>
+<li>策略生成<br>跨模态生成会带来最多的新应用场景，文生图、文生视频、图生文、视频生文均有产品问世，尤其是文生图，如Stability AI</li>
+</ul>
+<h2 id="前沿技术"><a href="#前沿技术" class="headerlink" title="前沿技术"></a>前沿技术</h2><p>多模态发展成为行业共识，文本端技术路径已收敛于LLM</p>
+<ul>
+<li>文本-ChatGPT、文心一言</li>
+<li>图像-Midjourney V5</li>
+<li>视频-Sora</li>
+<li>多模态-谷歌的GEMINI<br>多模态技术面临数据存量即将枯竭的困境，视频等模态数据收集成本高于文本数据，导致多模态数据集远少于文本数据集。Epochai数据显示，高质量的语言数据可能在2026年前耗尽，低质量的语言数据也可能在未来20年内面临枯竭，为了解决数据枯竭问题，AI合成数据应运而生，如结构化数据企业Mostly AI和非结构化数据企业DataGen</li>
+</ul>
+<h2 id="应用概况"><a href="#应用概况" class="headerlink" title="应用概况"></a>应用概况</h2><p>ToB:</p>
+<ul>
+<li>​​​数字人：趣玩科技已初步建成高自然度虚拟数字人</li>
+<li>SaaS：客服、财务、营销、供应链、人力资源等</li>
+<li>数字设计：工业设计、平面设计、插图、游戏动画等</li>
+<li>金融：风险评估、量化交易、柜台业务办理等</li>
+</ul>
+<p>ToC：</p>
+<ul>
+<li>出版：AIGC可替代用户成为内容生产者，并辅助完成编辑工作。部分小说网站已推出AIGC辅助创作功能，输入关键词即可自动生成内容；在编辑环节，AIGC可抓去热点新闻事件，自动分析挑选选题的同时，基于文本识别和深度学习模型，快速完成文章审校工作。</li>
+<li>游戏：提高NPC对话逻辑性、细化语调、表情和肢体动作，增强玩家与游戏的交互性，为玩家提供自由度较高的沉浸式体验；生成玩法文案，提供关于机制和故事情节等方面建议，提升游戏趣味性；辅助生成更精美的画面。</li>
+<li>影视：赋能影视制作全流程，从策略、摄制、制作到宣发，大幅降低影视行业门槛，提供内容创意参考，同时实现降本增效。策划阶段，深度学习算法可通过快速大量阅读已发布影片，结合关键词，为编剧提供基本创意参考，帮助编剧进行润色和翻译等工作。摄制阶段，可帮助完成分镜绘制、镜头语言设计等工作；帮助日程安排、制片统筹、剧组预算等基础工作。后期制作阶段，可完成添加字幕、视频剪辑、调色等基础工作，随着技术成熟，也逐渐可完成特效制作、动画制作等复杂工作。<br>2023年奥斯卡最佳影片《瞬息全宇宙》，这部科幻电影的视觉团队仅有五人，他们通过与Runway合作，使用其AI工具完成背景、放慢视频、制作无限延伸的图片等工作，极大地提升了视觉特效制作效率。</li>
+</ul>
+<p>但AIGC应用端仍存在诸多挑战：</p>
+<ul>
+<li>​SaaS：带来了数据隐私和信息安全等问题，AIGC模型具有潜在的记忆能力。</li>
+<li>数字设计：对版权要求尤为重要，AIGC通过互联网、第三方数据集等进行训练时，可能包含通过爬虫等方法获取的未经授权的数据，引发知识产权归属混乱的问题。</li>
+<li>金融：AIGC易生成虚假新闻或误导信息，导致投资者做出错误决策，同时可能导致市场价格异常波动。</li>
+<li>游戏：不受剧情控制、无限延伸的人机对话，在合规方面存在较大不确定性。</li>
+<li>影视：AIGC拟人化的情感表达尚待提升。</li>
+<li>出版：AIGC无法确保生成内容的合规性。</li>
+</ul>
+<h2 id="发展展望"><a href="#发展展望" class="headerlink" title="发展展望"></a>发展展望</h2><p>通用人工智能（Artificial General Intelligence, AGI）是一种可在任何专业领域内像人类一样思考、学习、修正并执行智力任务的人工智能系统，要求AI系统具备人类多理解的常识、共同行动规范和价值观，最大特点是对真实世界的规则，如物理状态、自然规律、化学变化等因素做出反馈，是人工智能发展的最高目标之一。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>文章笔记【2024年AIGC行业研究：多模态大模型与商业应用 - CSDN App】</div>
+      <div>http://example.com/2024/11/07/文章笔记【2024年AIGC行业研究：多模态大模型与商业应用 - CSDN App】/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年11月7日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/11/07/%E5%BC%A0%E5%9B%BD%E8%8D%A3%E7%94%B5%E5%BD%B1%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86-%E8%87%AA%E7%94%A8/" title="张国荣电影资源合集-自用_">
+                        <span class="hidden-mobile">张国荣电影资源合集-自用_</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
